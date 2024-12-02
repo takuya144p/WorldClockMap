@@ -31,4 +31,27 @@ body, html {
     display: flex;
     align-items: center;
     justify-content: center;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    position: absolute;
+    width: 50%;
+    height: 2px;
+    background: black;
+    transform-origin: 100%;
+    top: 50%;
+}
+
+.hour {
+    height: 4px;
+}
+
+.minute {
+    height: 3px;
+}
+
+.second {
+    height: 2px;
+    background: red;
 }
