@@ -24,12 +24,11 @@ body {
     justify-content: center;
 }
 
-.hand {
-    position: absolute;
-    background: black;
-    transform-origin: bottom center;
-    top: 50%;
-    left: 50%;
+.hand { 
+    position: absolute; 
+    transform-origin: bottom center; 
+    top: 50%; left: 50%; 
+    transform: translateX(-50%); 
 }
 
 .hour {
