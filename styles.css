@@ -24,28 +24,38 @@ body {
     justify-content: center;
 }
 
-.hand { 
-    position: absolute; 
-    transform-origin: bottom center; 
-    top: 50%; 
-    left: 50%; 
-    transform: translateX(-50%); 
+.center-point {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    position: absolute;
+    background: black;
+    transform-origin: 50% 100%; /* センターポイントを回転軸に設定 */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .hour {
-    height: 25px; 
-    width: 4px; 
-    background: black; 
+    height: 25px;
+    width: 4px;
+    background: black;
 }
 
-.minute { 
-    height: 35px; 
-    width: 2px; 
-    background: black; 
+.minute {
+    height: 35px;
+    width: 2px;
+    background: black;
 }
 
-.second { 
-    height: 45px; 
+.second {
+    height: 45px;
     width: 1px;
     background: red;
 }
