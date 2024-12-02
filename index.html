@@ -8,12 +8,21 @@
 </head>
 <body>
     <div id="map-container">
-        <img src="images/WorldMap.jpg" alt="世界地図" id="world-map">
+        <img src="path/to/world-map.jpg" alt="世界地図" id="world-map">
         <!-- 時計を配置するための要素 -->
-        <div class="clock" id="clock1"></div>
-        <div class="clock" id="clock2"></div>
+        <div class="clock" id="clock1">
+            <div class="hand hour"></div>
+            <div class="hand minute"></div>
+            <div class="hand second"></div>
+        </div>
+        <div class="clock" id="clock2">
+            <div class="hand hour"></div>
+            <div class="hand minute"></div>
+            <div class="hand second"></div>
+        </div>
         <!-- 必要な数だけ時計を追加 -->
     </div>
     <script src="script.js"></script>
 </body>
 </html>
+
