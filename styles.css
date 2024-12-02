@@ -36,25 +36,29 @@ body, html {
 
 .hand {
     position: absolute;
-    width: 1%;
+    width: 50%;
+    height: 2%;
     background: black;
     transform-origin: bottom;
     top: 50%;
     left: 50%;
-    border-radius: 10px;
+    transform: translate(-50%, 0);
 }
 
 .hour {
-    height: 25%;
+    height: 4%;
+    width: 30%;
     background: black;
 }
 
 .minute {
-    height: 35%;
+    height: 3%;
+    width: 40%;
     background: black;
 }
 
 .second {
-    height: 40%;
+    height: 2%;
+    width: 45%;
     background: red;
 }
