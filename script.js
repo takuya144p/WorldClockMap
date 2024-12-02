@@ -17,6 +17,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function updateClock(element, timezone) {
     const now = new Date();
-    const localTime = now.toLocaleString('en-US', { timeZone: timezone, hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false });
-    element.textContent = localTime;
+    const localTime = new Date(now.toLocaleString('en-US', { timeZone: timezone }));
+    const hours = localTime.getHours();
+    const minutes = localTime.getMinutes();
+    const seconds = localTime.getSeconds();
+
+    const hourHand = element.querySelector('.hour');
+    const minuteHand = element.querySelector('.minute');
+    const secondHand = element.querySelector('.second');
+
+    const hourDeg = (hours % 12) * 30 + (minutes / 2); // 1時間 = 30度
+    const minuteDeg = minutes * 6; // 1分 = 6度
+    const secondDeg = seconds * 6; // 1秒 = 6度
+
+    hourHand.style.transform = `rotate(${hourDeg}deg)`;
+    minuteHand.style.transform = `rotate(${minuteDeg}deg)`;
+    secondHand.style.transform = `rotate(${secondDeg}deg)`;
 }
