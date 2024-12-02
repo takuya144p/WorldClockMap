@@ -36,25 +36,25 @@ body, html {
 
 .hand {
     position: absolute;
-    width: 50%;
+    width: 1%;
     background: black;
-    transform-origin: 100% 50%; /* 修正: 針の根元を中心に配置 */
+    transform-origin: bottom;
     top: 50%;
     left: 50%;
+    border-radius: 10px;
 }
 
 .hour {
-    height: 4px;
-    width: 25%; /* 長さを調整 */
+    height: 25%;
+    background: black;
 }
 
 .minute {
-    height: 3px;
-    width: 35%; /* 長さを調整 */
+    height: 35%;
+    background: black;
 }
 
 .second {
-    height: 2px;
-    width: 40%; /* 長さを調整 */
+    height: 40%;
     background: red;
 }
